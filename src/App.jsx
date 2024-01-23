@@ -1,10 +1,9 @@
-import { useState } from 'react'
-import viteLogo from '/vite.svg'
+const title = 'Bonjour les gens'
 
 function App() {
   return (
     <div>
-      <h1 id="title" className="title">Bonjour les gens</h1>
+      <h1 id="title" className="title">{title}</h1>
       <p>
         Lorem ipsum dolor sit amet, consectetor adipisicing elit. Aaccusamus, asperiores, aspernatur asumenda consequatur corporiseum exepturi id illum maiores minus nam nobis quo reiciendis ullam veritatis.
       </p>
