@@ -4,6 +4,12 @@ const style = {
   backgroundColor: "blue",
 };
 const showTitle = false;
+// Liste de taches
+const todos = [
+  'Presenter React',
+  'Presenter le JSX',
+  'Creer des composants'
+];
 
 function App() {
 
@@ -13,7 +19,7 @@ function App() {
   }
   return (
     <>
-      <h1 onClick={handleClick} id="title" style={style} className="title">{title}</h1>
+      {showTitle ? <h1 onClick={handleClick} id="title" style={style} className="title">{title}</h1> : <h2>Title is not exist</h2>}
       <input type='text' defaultValue={title} />
       <p>
         Lorem ipsum dolor sit amet, consectetor adipisicing elit. Aaccusamus, asperiores, aspernatur asumenda consequatur corporiseum exepturi id illum maiores minus nam nobis quo reiciendis ullam veritatis.
