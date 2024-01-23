@@ -24,6 +24,9 @@ function App() {
       <p>
         Lorem ipsum dolor sit amet, consectetor adipisicing elit. Aaccusamus, asperiores, aspernatur asumenda consequatur corporiseum exepturi id illum maiores minus nam nobis quo reiciendis ullam veritatis.
       </p>
+      <ul>
+        {todos.map((todo) => (<li key={todo}>{todo}</li>))}
+      </ul>
     </>
   )
 }
