@@ -9,7 +9,7 @@ function App() {
 
   return (
     <>
-      <Title color="green" />
+      <Title color="green">Mon Composant</Title>
       <input type='text' />
       <p>
         Lorem ipsum dolor sit amet, consectetor adipisicing elit. Aaccusamus, asperiores, aspernatur asumenda consequatur corporiseum exepturi id illum maiores minus nam nobis quo reiciendis ullam veritatis.
@@ -21,9 +21,9 @@ function App() {
   )
 }
 
-function Title ({ color }) {
+function Title ({ color, children }) {
   return (
-    <h1 style={{color: color}}>Bonjour les gens</h1>
+    <h1 style={{color: color}}>{children}</h1>
   )
 }
 
