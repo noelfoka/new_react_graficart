@@ -11,6 +11,9 @@ const Formular = () => {
   const reset = () => {
     setFirstname('');
   }
+
+  console.log('render');
+
   return (
     <form>
         <input type="text" name="firstname" value={firstname} onChange={handleChange} />
