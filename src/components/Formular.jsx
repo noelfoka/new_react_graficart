@@ -8,13 +8,19 @@ const Formular = () => {
     setValue(e.target.value);
   }
 
+  const [checked, setChecked] = useState(false);
+
+  const toggleCheck = () => {
+    setChecked(!checked);
+  }
+
   console.log('render');
 
   return (
     <form onChange={handleChange}>
-        <input type="text" name="firstname" value={value}  />
-        <input type='checkbox' checcked={checked} onChange={toggleCheckbox} />
-        <button type="button">Envoyer</button>
+        <textarea type="text" name="firstname" value={value}  />
+        <input type='checkbox' checked={checked} onChange={toggleCheck} />
+        <button type="button" disabled={checked}>Envoyer</button>
     </form>
   )
 }
