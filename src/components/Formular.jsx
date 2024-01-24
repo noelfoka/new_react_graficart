@@ -13,6 +13,7 @@ const Formular = () => {
   return (
     <form onChange={handleChange}>
         <input type="text" name="firstname" value={value}  />
+        <input type='checkbox' checcked={checked} onChange={toggleCheckbox} />
         <button type="button">Envoyer</button>
     </form>
   )
