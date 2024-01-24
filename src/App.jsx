@@ -10,6 +10,10 @@ function App() {
 
   const addCount = () => setCount(count + 1);
 
+  const ajouter = () => {
+    setPerson({...person, age: person.age + 1});
+  }
+
   return (
     <div>
       <p>{count}</p>
