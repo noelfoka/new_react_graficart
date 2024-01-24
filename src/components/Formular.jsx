@@ -2,9 +2,16 @@ import { useState } from 'react';
 
 const Formular = () => {
 
-    const [firstname, setFirstname] = useState("Noel Joel")
+  const [firstname, setFirstname] = useState("Noel Joel");
+
+  const handleChange = (e) => {
+    setFirstname(e.target.value);
+  }
   return (
-    <input type="text" name="firstname" value={firstname} onChange={handleChange} />
+    <form>
+        <input type="text" name="firstname" value={firstname} onChange={handleChange} />
+        {firstname}
+    </form>
   )
 }
 
