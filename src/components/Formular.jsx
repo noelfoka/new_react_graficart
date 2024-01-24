@@ -11,6 +11,7 @@ const Formular = () => {
     <form>
         <input type="text" name="firstname" value={firstname} onChange={handleChange} />
         {firstname}
+        <button type="button" onClick={reset}></button>
     </form>
   )
 }
