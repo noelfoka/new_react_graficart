@@ -18,7 +18,7 @@ const Formular = () => {
 
   return (
     <form onChange={handleChange}>
-        <textarea type="text" name="firstname" value={value}  />
+        <textarea type="text" name="firstname" defaultValue={value}  />
         <input type='checkbox' checked={checked} onChange={toggleCheck} />
         <button type="button" disabled={!checked}>Envoyer</button>
     </form>
