@@ -1,6 +1,6 @@
-export function Checkbox ({checked, onChange, label}) {
+export function Checkbox ({checked, onChange, label, id}) {
     return (
-        <div>
+        <div className="form-check">
             <input
                 type="checkbox"
                 className="form-check-input"

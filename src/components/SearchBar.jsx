@@ -1,4 +1,5 @@
 import Input from "./header/Input"
+import { Checkbox } from './header/Checkbox';
 
 const SearchBar = () => {
   return (
@@ -8,6 +9,11 @@ const SearchBar = () => {
                 value=""
                 onChange={() => null}
                 placeholder="Search..."
+            />
+            <Checkbox 
+              checked={false}
+              onChange={() => null}
+              label="N'afficher que les produits en stock..."
             />
         </div>
     </div>
