@@ -1,6 +1,14 @@
+import Input from "./header/Input"
+
 const SearchBar = () => {
   return (
-    <div>SearchBar</div>
+    <div>
+        <div className="mb-3">
+            <Input 
+                
+            />
+        </div>
+    </div>
   )
 }
 
