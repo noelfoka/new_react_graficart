@@ -1,5 +1,10 @@
-import React from 'react'
-
+/**
+ * 
+ * @param {string} placeholder
+ * @param {string} value
+ * @param {(s: string) => void} onChange
+ * @returns {JSX.Element}
+ */
 const Input = ({placeholder, value, onChange}) => {
   return (
     <input 
