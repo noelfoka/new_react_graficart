@@ -5,9 +5,9 @@ const SearchBar = () => {
     <div>
         <div className="mb-3">
             <Input 
-                value=''
+                value=""
                 onChange={() => null}
-                placeHolder='Search...'
+                placeholder="Search..."
             />
         </div>
     </div>

@@ -1,3 +1,5 @@
+import SearchBar from "./components/SearchBar";
+
 const PRODUCTS = [
     {category: "Fruits", price:"$1", stocked: true, name: "Apple"},
     {category: "Fruits", price:"$1", stocked: true, name: "Dragonfruit"},
@@ -10,9 +12,9 @@ const PRODUCTS = [
 function App() {
 
   return (
-    <>
-      
-    </>
+    <div className="container my-5">
+      <SearchBar />
+    </div>
   )
 }
 
