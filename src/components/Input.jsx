@@ -1,8 +1,14 @@
 import React from 'react'
 
-const Input = () => {
+const Input = ({placeholder, value, onChange}) => {
   return (
-    <div>Input</div>
+    <input 
+        type='text' 
+        className='form-control'
+        value={value}
+        placeholder={placeholder}
+        onChange={(e) => onChange(e.target.value)}
+    />
   )
 }
 
