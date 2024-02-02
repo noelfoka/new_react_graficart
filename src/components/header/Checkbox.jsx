@@ -1,3 +1,9 @@
+/**
+ * 
+ * @param {*} param0 
+ * @returns 
+ */
+
 export function Checkbox ({checked, onChange, label, id}) {
     return (
         <div className="form-check">
